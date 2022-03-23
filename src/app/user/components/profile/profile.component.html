@@ -1,0 +1,87 @@
+<section class="page-title">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Personal Info</h2>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://www.goldenarrowco.com/en">Home</a>
+                </li>
+                <li>
+                    Personal Info
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="holder">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="https://www.goldenarrowco.com/en/accountdetails" class="list-group-item list-group-item-action active">
+                        Personal Info
+                    </a>
+                    <a href="https://www.goldenarrowco.com/en/accountaddress" class="list-group-item list-group-item-action">Address Book</a>
+                    <a href="https://www.goldenarrowco.com/en/myorders" class="list-group-item list-group-item-action">My Orders</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-8 aside">
+                <div class="row vert-margin">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Personal Info</h3>
+                                <p><b>Name:</b> Ahmed Khaled<br>
+
+                                    <b>Email Address:</b> ahmedkhaledsaleh1996@gmail.com<br>
+                                    <b>Phone:</b> </p>
+                                <div class="mt-2 clearfix">
+                                    <a href="#" class="link-icn js-show-form" data-form="#updateDetails"><i class="icon-pencil"></i>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3 d-none" id="updateDetails">
+                    <form action="https://www.goldenarrowco.com/en/accountdetails/89" method="post">
+                        <input type="hidden" name="_token" value="IzamIVj3KytJto67Qm80MUIGunoXFDssKu7ZzY1O">                            <input type="hidden" name="id" value="89">
+                    <div class="card-body">
+                        <h3>Update Account Details</h3>
+                        <div class="row mt-2">
+
+
+                            <div class="col-sm-9">
+                                <label>Name:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" value="Ahmed Khaled" placeholder="Ahmed Khaled">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-9">
+                                <label>Email Address:</label>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" value="ahmedkhaledsaleh1996@gmail.com" placeholder="ahmedkhaledsaleh1996@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <label>Phone:</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" value="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <button type="reset" class="btn btn-danger js-close-form" data-form="#updateDetails">Cancel</button>
+                            <button type="submit" class="btn btn-success ml-1">Update</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
