@@ -97,7 +97,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a class="nav-link">
                       Categories
                       <i class="bx bx-chevron-down"></i>
                     </a>
@@ -106,9 +106,12 @@
                         *ngFor="let category of categoriesList"
                         class="nav-item"
                       >
-                        <a href="index.html" class="nav-link">{{
-                          category.name
-                        }}</a>
+                        <a
+                          [routerLink]="['products']"
+                          [queryParams]="{ categoryId: category.id }"
+                          class="nav-link"
+                          >{{ category.name }}</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -132,7 +135,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 offset-md-2">
             <div class="middle-header-search">
-              <form>
+              <form (ngSubmit)="getProductsBySearch()">
                 <div class="row align-items-center">
                   <div class="col-md-12">
                     <div class="search-box">
@@ -140,6 +143,8 @@
                         type="text"
                         class="form-control"
                         placeholder="Search"
+                        [(ngModel)]="productName"
+                        [ngModelOptions]="{ standalone: true }"
                       />
                       <button type="submit">
                         <i class="bx bx-search"></i>
